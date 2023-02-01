@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    
+    <title>Document</title>
+    <link href = 'style.css' rel = 'stylesheet'></script>
+
+</head>
+<body>
+    <div class="left-section">
+      <img src="leaves.avif" alt="ODIN Image">
+      <h1 class="title">ODIN</h1>
+    </div>
+    <div class = 'float'>
+    <h1>This form is a nonsense form for nonsence people who have no job and have no purpose in life and are sad and mad and most importantly bad</h1>
+        </div>
+    <div class="right-section">
+      <h2>Please fill this form</h2>
+      <style>
+        .form-row {
+          display: flex;
+          justify-content: center;
+          margin-top: 1rem;
+        }
+      
+        button[type="submit"] {
+          padding: 1rem 2rem;
+          background-color: blue;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          font-size: 1.2rem;
+          cursor: pointer;
+        }
+      </style>
+      <form>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name">
+          </div>
+          <div class="form-field">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-field">
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone-number">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <div class="form-field">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password">
+          </div>
+        </div>
+        <div class="form-row">
+            <button type="submit">Submit</button>
+          </div>
+      </form>
+      <script>
+        const form = document.querySelector("form");
+        const passwordInput = document.getElementById("password");
+        const confirmPasswordInput = document.getElementById("confirm-password");
+      
+        form.addEventListener("submit", function(event) {
+          if (passwordInput.value !== confirmPasswordInput.value) {
+            event.preventDefault();
+            alert("Password and Confirm Password fields do not match");
+          }
+        });
+      </script>
+    </div>
+  </body>
+</html>

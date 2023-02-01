@@ -1,0 +1,77 @@
+body {
+    display: flex;
+  }
+  
+  .left-section {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(your-image-src.jpg);
+    background-size: cover;
+    background-color: rgba(138, 126, 126, 0.6);
+    font-size: 50px;
+  }
+  
+  .title {
+    position: absolute;
+    background-color: rgba(68, 50, 50, 0.6);
+    padding: 10px;
+    text-align: center;
+    width: 71.5%;
+    color:rgb(201, 201, 178);
+
+  }
+
+  .float {
+    position: absolute;
+    margin-left: 55%;
+    margin-right: 5%;
+    margin-top: 3%;
+  }
+  
+  .right-section {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  
+  .form-row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .form-field {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    
+  }
+  .form-field {
+    font-size: larger;
+  }
+
+  .form-field input:focus {
+    outline: blue solid 2px;
+  }
+  .form-field input,
+  button[type="submit"] {
+    border-radius: 1rem;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
